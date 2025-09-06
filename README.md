@@ -1,9 +1,10 @@
 
 
-## Ref
-- https://tailwindcss.com/docs/installation/using-vite
+
 
 ## Get start
+
+ref: https://tailwindcss.com/docs/installation/using-vite
 
 Init project
 ``` sh
