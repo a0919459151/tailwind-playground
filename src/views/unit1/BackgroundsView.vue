@@ -1,5 +1,5 @@
 <script setup>
-import CodeShowcase from '../components/CodeShowcase.vue';
+import CodeShowcase from '../../components/CodeShowcase.vue';
 
 const code = {
   backgrounds: `<div class="w-24 h-24 bg-blue-500"><\/div>

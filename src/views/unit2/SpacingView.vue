@@ -1,5 +1,5 @@
 <script setup>
-import CodeShowcase from '../components/CodeShowcase.vue';
+import CodeShowcase from '../../components/CodeShowcase.vue';
 
 const code = {
   margin: `<div class="bg-blue-200 p-4 m-4">外邊距 (m-4)<\/div>

@@ -8,7 +8,6 @@
       您將會練習使用 utility classes 來控制文字樣式 (大小、顏色、粗細)、設定背景顏色、新增邊框，以及調整圓角——這些是構成所有網頁介面的基本元素。
     </p>
 
-    <!-- Nested route content will be rendered here -->
     <router-view />
 
   </div>
@@ -17,10 +16,3 @@
 <script setup>
 // No more code object here, as content is in sub-views
 </script>
-
-<style scoped lang="postcss">
-/* Styles for sub-navigation */
-.router-link-exact-active {
-  @apply bg-blue-100 text-blue-700 font-semibold;
-}
-</style>

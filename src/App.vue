@@ -5,7 +5,7 @@ const navItems = [
   {
     name: '第一單元',
     icon: 'looks_one',
-    path: '/unit1/typography', // Default path for the unit
+    path: '/unit1/typography',
     children: [
       { name: '1.1 文字與顏色', path: '/unit1/typography' },
       { name: '1.2 背景、邊框與圓角', path: '/unit1/backgrounds' },
@@ -14,14 +14,13 @@ const navItems = [
   {
     name: '第二單元',
     icon: 'looks_two',
-    path: '/unit2/spacing', // Default path for the unit
+    path: '/unit2/spacing',
     children: [
       { name: '2.1 間距與佈局', path: '/unit2/spacing' },
       { name: '2.2 Flexbox', path: '/unit2/flexbox' },
       { name: '2.3 Grid', path: '/unit2/grid' },
     ],
   },
-  // Add more units here
 ];
 </script>
 

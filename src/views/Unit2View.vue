@@ -8,7 +8,6 @@
       您將會練習使用外邊距 (Margin)、內邊距 (Padding)、元素間距 (Space Between)，以及 Flexbox 和 Grid 佈局系統。
     </p>
 
-    <!-- Nested route content will be rendered here -->
     <router-view />
 
   </div>

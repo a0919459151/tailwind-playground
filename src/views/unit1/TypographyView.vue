@@ -1,5 +1,5 @@
 <script setup>
-import CodeShowcase from '../components/CodeShowcase.vue';
+import CodeShowcase from '../../components/CodeShowcase.vue';
 
 const code = {
   textSize: `<p class="text-sm">這是一段小號字體 (text-sm)。<\/p>

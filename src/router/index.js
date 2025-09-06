@@ -4,9 +4,10 @@ import Unit1ParentView from '../views/Unit1View.vue';
 import Unit2ParentView from '../views/Unit2View.vue'; // New Unit2 parent view
 
 // Import sub-views
-import TypographyView from '../views/TypographyView.vue';
-import BackgroundsView from '../views/BackgroundsView.vue';
-import SpacingView from '../views/SpacingView.vue';
+import TypographyView from '../views/unit1/TypographyView.vue';
+import BackgroundsView from '../views/unit1/BackgroundsView.vue';
+import SpacingView from '../views/unit2/SpacingView.vue';
+import FlexboxView from '../views/unit2/FlexboxView.vue'; // New FlexboxView
 
 const routes = [
   {
@@ -53,7 +54,7 @@ const routes = [
       {
         path: 'flexbox',
         name: 'unit2-flexbox',
-        component: null // Placeholder for future FlexboxView
+        component: FlexboxView // Use FlexboxView
       },
       {
         path: 'grid',
