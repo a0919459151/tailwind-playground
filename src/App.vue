@@ -21,6 +21,40 @@ const navItems = [
       { name: '2.3 Grid', path: '/unit2/grid' },
     ],
   },
+  {
+    name: '第三單元',
+    icon: 'looks_3',
+    path: '/unit3/button',
+    children: [
+      { name: '3.1 按鈕', path: '/unit3/button' },
+      { name: '3.2 卡片', path: '/unit3/card' },
+    ],
+  },
+  {
+    name: '第四單元',
+    icon: 'looks_4',
+    path: '/unit4/breakpoints',
+    children: [
+      { name: '4.1 斷點練習', path: '/unit4/breakpoints' },
+    ],
+  },
+  {
+    name: '第五單元',
+    icon: 'looks_5',
+    path: '/unit5/pseudo-classes',
+    children: [
+      { name: '5.1 偽類', path: '/unit5/pseudo-classes' },
+    ],
+  },
+  {
+    name: '第六單元',
+    icon: 'looks_6',
+    path: '/unit6/apply-directive',
+    children: [
+      { name: '6.1 使用 @apply', path: '/unit6/apply-directive' },
+      { name: '6.2 修改 tailwind.config.js', path: '/unit6/customize-config' },
+    ],
+  },
 ];
 </script>
 

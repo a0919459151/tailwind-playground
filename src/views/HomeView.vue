@@ -1,6 +1,8 @@
 <template>
   <div class="max-w-7xl mx-auto">
+
     <h1 class="text-4xl font-bold text-gray-800 border-b pb-4 mb-6">Tailwind CSS 練習場</h1>
+    
     <p class="mt-4 text-lg text-gray-600">
       歡迎來到 Tailwind CSS Playground ！在這裡，我們將通過一系列的單元來學習與實踐 Tailwind 的核心功能。
     </p>
@@ -33,5 +35,6 @@
         請點擊左方的導覽列，從「第一單元」開始您的旅程。
       </p>
     </div>
+    
   </div>
 </template>

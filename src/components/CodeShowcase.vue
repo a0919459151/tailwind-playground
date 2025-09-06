@@ -28,7 +28,7 @@ defineProps({
 });
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 :deep(.hljs) {
   height: 100%;
   border-radius: 0.5rem;
