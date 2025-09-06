@@ -28,3 +28,8 @@ export default defineConfig({
   ],
 })
 ```
+
+Install vue router
+``` sh
+npm install vue-router@4
+```

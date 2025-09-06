@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+.router-link-exact-active {
+  @apply bg-gray-200 text-gray-800 font-semibold shadow-md;
+}
+
+/* Material Symbols 圖示設定：控制圖示的填滿、粗細、等級和光學尺寸，確保圖示顯示一致。 */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body {
+  font-family: 'Manrope', 'Noto Sans', sans-serif;
+}
