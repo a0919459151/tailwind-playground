@@ -7,10 +7,3 @@
 
   </div>
 </template>
-
-<style scoped lang="postcss">
-/* Styles for sub-navigation */
-.router-link-exact-active {
-  @apply bg-blue-100 text-blue-700 font-semibold;
-}
-</style>
