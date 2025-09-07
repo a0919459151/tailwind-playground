@@ -10,7 +10,8 @@
 - vue-router : router
 - tailwindcss : an utility-firstcss framework
 - highlight.js : code example highlight
-- codemirror : live preview code textarea 
+- codemirror : live preview code textarea
+- pinia : store
 
 ## 學習藍圖
 - 第一單元：基礎入門 - 學習文字、顏色、背景、邊框與圓角。

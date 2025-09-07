@@ -1,20 +1,10 @@
 <script setup>
-import { ref } from 'vue';
 import { Codemirror } from 'vue-codemirror';
 import { html } from '@codemirror/lang-html';
 import { EditorView } from '@codemirror/view';
+import { useEditorStore } from '../stores/editor'; // Import the Pinia store
 
-const initialCode = `<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-  <div class="shrink-0">
-    <img class="h-12 w-12" src="/vite.svg" alt="Vite Logo">
-  </div>
-  <div>
-    <div class="text-xl font-medium text-black">Live Preview</div>
-    <p class="text-slate-500">Edit the code to see changes!</p>
-  </div>
-</div>`;
-
-const userCode = ref(initialCode);
+const editorStore = useEditorStore(); // Use the store
 
 const extensions = [
   html(),
@@ -90,7 +80,7 @@ const extensions = [
           <div
             class="w-full h-full p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center"
           >
-            <div v-html="userCode" class="w-full"></div>
+            <div v-html="editorStore.userCode" class="w-full"></div>
           </div>
         </div>
 
@@ -99,7 +89,7 @@ const extensions = [
           <label for="code-editor" class="block text-sm font-medium text-gray-700 mb-2">HTML & Tailwind CSS</label>
           <codemirror
             id="code-editor"
-            v-model="userCode"
+            v-model="editorStore.userCode"
             placeholder="Enter your Tailwind CSS code here..."
             :style="{ height: '100%' }"
             :autofocus="true"
