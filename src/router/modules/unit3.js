@@ -9,6 +9,7 @@ const routes = {
   children: [
     {
       path: '',
+      name: 'unit3-redirect',
       redirect: '/unit3/button'
     },
     {

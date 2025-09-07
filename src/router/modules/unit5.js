@@ -8,6 +8,7 @@ const routes = {
   children: [
     {
       path: '',
+      name: 'unit5-redirect',
       redirect: '/unit5/pseudo-classes'
     },
     {

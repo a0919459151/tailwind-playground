@@ -10,6 +10,7 @@ const routes = {
   children: [
     {
       path: '',
+      name: 'unit2-redirect',
       redirect: '/unit2/spacing'
     },
     {

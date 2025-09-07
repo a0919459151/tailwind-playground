@@ -8,6 +8,7 @@ const routes = {
   children: [
     {
       path: '',
+      name: 'unit6-redirect',
       redirect: '/unit6/apply-directive'
     },
     {

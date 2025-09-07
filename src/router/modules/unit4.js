@@ -8,6 +8,7 @@ const routes = {
   children: [
     {
       path: '',
+      name: 'unit4-redirect',
       redirect: '/unit4/breakpoints'
     },
     {
