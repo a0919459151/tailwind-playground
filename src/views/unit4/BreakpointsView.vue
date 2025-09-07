@@ -5,29 +5,29 @@ const sections = [
   {
     title: '響應式寬度',
     code: `<div class="w-full md:w-1/2 lg:w-1/3 bg-blue-200 p-4 text-center">
-  <p>我會根據螢幕寬度改變寬度<\/p>
-  <p class="text-sm">(w-full md:w-1/2 lg:w-1/3)<\/p>
-<\/div>`
+  <p>我會根據螢幕寬度改變寬度</p>
+  <p class="text-sm">(w-full md:w-1/2 lg:w-1/3)</p>
+</div>`
   },
   {
     title: '響應式顯示/隱藏',
     code: `<div class="hidden md:block bg-green-200 p-4 text-center">
-  <p>我在小螢幕上會隱藏<\/p>
-  <p class="text-sm">(hidden md:block)<\/p>
-<\/div>
+  <p>我在小螢幕上會隱藏</p>
+  <p class="text-sm">(hidden md:block)</p>
+</div>
 <div class="block md:hidden bg-red-200 p-4 text-center mt-4">
-  <p>我在大螢幕上會隱藏<\/p>
-  <p class="text-sm">(block md:hidden)<\/p>
-<\/div>`
+  <p>我在大螢幕上會隱藏</p>
+  <p class="text-sm">(block md:hidden)</p>
+</div>`
   },
   {
     title: '響應式 Flexbox',
     code: `<div class="flex flex-col md:flex-row items-center justify-center bg-gray-100 p-4 space-y-4 md:space-y-0 md:space-x-4">
-  <div class="w-24 h-24 bg-blue-300">1<\/div>
-  <div class="w-24 h-24 bg-green-300">2<\/div>
-  <div class="w-24 h-24 bg-red-300">3<\/div>
-<\/div>
-<p class="mt-4 text-sm text-gray-600">在小螢幕上垂直排列，大螢幕上水平排列。<\/p>`
+  <div class="w-24 h-24 bg-blue-300">1</div>
+  <div class="w-24 h-24 bg-green-300">2</div>
+  <div class="w-24 h-24 bg-red-300">3</div>
+</div>
+<p class="mt-4 text-sm text-gray-600">在小螢幕上垂直排列，大螢幕上水平排列。</p>`
   }
 ];
 </script>

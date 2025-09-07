@@ -4,28 +4,28 @@ import CodeShowcase from '../../components/CodeShowcase.vue';
 const sections = [
   {
     title: '外邊距 (Margin)',
-    code: `<div class="bg-blue-200 p-4 m-4">外邊距 (m-4)<\/div>
-<div class="bg-green-200 p-4 mx-auto w-48">水平置中 (mx-auto)<\/div>
-<div class="bg-red-200 p-4 mt-8">上外邊距 (mt-8)<\/div>`
+    code: `<div class="bg-blue-200 p-4 m-4">外邊距 (m-4)</div>
+<div class="bg-green-200 p-4 mx-auto w-48">水平置中 (mx-auto)</div>
+<div class="bg-red-200 p-4 mt-8">上外邊距 (mt-8)</div>`
   },
   {
     title: '內邊距 (Padding)',
-    code: `<div class="bg-blue-200 p-4">內邊距 (p-4)<\/div>
-<div class="bg-green-200 py-2">垂直內邊距 (py-2)<\/div>
-<div class="bg-red-200 px-6">水平內邊距 (px-6)<\/div>`
+    code: `<div class="bg-blue-200 p-4">內邊距 (p-4)</div>
+<div class="bg-green-200 py-2">垂直內邊距 (py-2)</div>
+<div class="bg-red-200 px-6">水平內邊距 (px-6)</div>`
   },
   {
     title: '元素間距 (Space Between)',
     code: `<div class="flex space-x-4 bg-gray-100 p-4">
-  <div class="w-16 h-16 bg-blue-300"><\/div>
-  <div class="w-16 h-16 bg-green-300"><\/div>
-  <div class="w-16 h-16 bg-red-300"><\/div>
-<\/div>
+  <div class="w-16 h-16 bg-blue-300"></div>
+  <div class="w-16 h-16 bg-green-300"></div>
+  <div class="w-16 h-16 bg-red-300"></div>
+</div>
 <div class="flex flex-col space-y-4 bg-gray-100 p-4 mt-4">
-  <div class="w-16 h-16 bg-blue-300"><\/div>
-  <div class="w-16 h-16 bg-green-300"><\/div>
-  <div class="w-16 h-16 bg-red-300"><\/div>
-<\/div>`
+  <div class="w-16 h-16 bg-blue-300"></div>
+  <div class="w-16 h-16 bg-green-300"></div>
+  <div class="w-16 h-16 bg-red-300"></div>
+</div>`
   }
 ];
 </script>
