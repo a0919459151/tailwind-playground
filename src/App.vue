@@ -52,7 +52,6 @@ const navItems = [
     path: '/unit6/apply-directive',
     children: [
       { name: '6.1 使用 @apply', path: '/unit6/apply-directive' },
-      { name: '6.2 修改 tailwind.config.js', path: '/unit6/customize-config' },
     ],
   },
 ];

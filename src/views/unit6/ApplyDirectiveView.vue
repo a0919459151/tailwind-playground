@@ -1,6 +1,6 @@
 <script setup>
 const code = {
-  applyExampleCode: `<!-- src/style.css 或 &lt;style lang="postcss"&gt; -->
+  applyExampleCode: `<!-- src/style.css -->
 .btn-primary {
   @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
 }

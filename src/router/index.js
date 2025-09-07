@@ -18,7 +18,6 @@ import CardView from '../views/unit3/CardView.vue'; // New CardView
 import BreakpointsView from '../views/unit4/BreakpointsView.vue'; // New BreakpointsView
 import PseudoClassesView from '../views/unit5/PseudoClassesView.vue'; // New PseudoClassesView
 import ApplyDirectiveView from '../views/unit6/ApplyDirectiveView.vue'; // New ApplyDirectiveView
-import CustomizeConfigView from '../views/unit6/CustomizeConfigView.vue'; // New CustomizeConfigView
 
 const routes = [
   {
@@ -139,11 +138,6 @@ const routes = [
         path: 'apply-directive',
         name: 'unit6-apply-directive',
         component: ApplyDirectiveView
-      },
-      {
-        path: 'customize-config',
-        name: 'unit6-customize-config',
-        component: CustomizeConfigView
       }
     ]
   }
