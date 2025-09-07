@@ -9,11 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@codemirror/lang-html": "^6.4.9",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/view": "^6.38.2",
     "@highlightjs/vue-plugin": "^2.1.0",
     "@tailwindcss/vite": "^4.1.13",
+    "codemirror": "^6.0.2",
     "highlight.js": "^11.11.1",
     "tailwindcss": "^4.1.13",
     "vue": "^3.5.18",
+    "vue-codemirror": "^6.1.1",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {

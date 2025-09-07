@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue';
+import { Codemirror } from 'vue-codemirror';
+import { html } from '@codemirror/lang-html';
+import { EditorView } from '@codemirror/view';
 
 const initialCode = `<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
   <div class="shrink-0">
@@ -12,6 +15,32 @@ const initialCode = `<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow
 </div>`;
 
 const userCode = ref(initialCode);
+
+const extensions = [
+  html(),
+  EditorView.lineWrapping,
+  EditorView.theme({
+    '&': {
+      fontSize: '0.875rem', // text-sm
+      backgroundColor: '#f9fafb', // bg-gray-50
+      color: '#1f2937', // text-gray-800
+      height: '100%',
+    },
+    '.cm-content': {
+      fontFamily: 'monospace',
+    },
+    '.cm-gutters': {
+      backgroundColor: '#f9fafb', // bg-gray-50
+      borderRight: '1px solid #d1d5db', // border-gray-300
+    },
+    '.cm-line': {
+      paddingLeft: '1rem',
+    },
+    '.cm-scroller': {
+      overflow: 'auto',
+    }
+  })
+];
 </script>
 
 <template>
@@ -21,7 +50,7 @@ const userCode = ref(initialCode);
     <p class="mt-4 text-lg text-gray-600">
       歡迎來到 Tailwind CSS Playground！
       <br/>
-      請點擊左方的導覽列開始學習，或直接在下方的編輯器中嘗試 Tailwind CSS。
+      在這裡，我們將通過一系列的單元來學習與實踐 Tailwind 的核心功能。
     </p>
 
     <div class="mt-10">
@@ -66,15 +95,19 @@ const userCode = ref(initialCode);
         </div>
 
          <!-- Code Editor -->
-        <div>
+        <div class="h-full">
           <label for="code-editor" class="block text-sm font-medium text-gray-700 mb-2">HTML & Tailwind CSS</label>
-          <textarea
+          <codemirror
             id="code-editor"
             v-model="userCode"
-            rows="15"
-            class="w-full h-full p-4 font-mono text-sm text-gray-800 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
             placeholder="Enter your Tailwind CSS code here..."
-          ></textarea>
+            :style="{ height: '100%' }"
+            :autofocus="true"
+            :indent-with-tab="true"
+            :tab-size="2"
+            :extensions="extensions"
+            class="w-full h-full border border-gray-300 rounded-lg overflow-hidden"
+          />
         </div>
       </div>
     </div>

@@ -5,11 +5,12 @@
 探索 tailwinds css 基礎用法。
 
 ## 專案引入依賴
-- vue 3
-- vite
-- vue-router
-- tailwindcss
-- highlight.js
+- vite : bundler
+- vue 3 : frontend framework
+- vue-router : router
+- tailwindcss : an utility-firstcss framework
+- highlight.js : code example highlight
+- codemirror : live preview code textarea 
 
 ## 學習藍圖
 - 第一單元：基礎入門 - 學習文字、顏色、背景、邊框與圓角。
