@@ -1,12 +1,27 @@
+<script setup>
+import { ref } from 'vue';
+
+const initialCode = `<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+  <div class="shrink-0">
+    <img class="h-12 w-12" src="/vite.svg" alt="Vite Logo">
+  </div>
+  <div>
+    <div class="text-xl font-medium text-black">Live Preview</div>
+    <p class="text-slate-500">Edit the code to see changes!</p>
+  </div>
+</div>`;
+
+const userCode = ref(initialCode);
+</script>
+
 <template>
   <div class="max-w-7xl mx-auto">
-
     <h1 class="text-4xl font-bold text-gray-800 border-b pb-4 mb-6">Tailwind CSS 練習場</h1>
 
     <p class="mt-4 text-lg text-gray-600">
-      歡迎來到 Tailwind CSS Playground ！
+      歡迎來到 Tailwind CSS Playground！
       <br/>
-      在這裡，我們將通過一系列的單元來學習與實踐 Tailwind 的核心功能。
+      請點擊左方的導覽列開始學習，或直接在下方的編輯器中嘗試 Tailwind CSS。
     </p>
 
     <div class="mt-10">
@@ -33,9 +48,40 @@
           </li>
         </ul>
       </div>
-      <p class="mt-8 text-center text-gray-500">
-        請點擊左方的導覽列，從「第一單元」開始您的旅程。
-      </p>
+    </div>
+
+    <!-- Live Preview Section -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">即時預覽</h2>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Preview -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Live Preview</label>
+          <div
+            class="w-full h-full p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center"
+          >
+            <div v-html="userCode" class="w-full"></div>
+          </div>
+        </div>
+
+         <!-- Code Editor -->
+        <div>
+          <label for="code-editor" class="block text-sm font-medium text-gray-700 mb-2">HTML & Tailwind CSS</label>
+          <textarea
+            id="code-editor"
+            v-model="userCode"
+            rows="15"
+            class="w-full h-full p-4 font-mono text-sm text-gray-800 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Enter your Tailwind CSS code here..."
+          ></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center text-gray-500">
+      <p>---</p>
+      <p class="mt-4">準備好後，請點擊左方的導覽列，從「第一單元」開始您的旅程。</p>
     </div>
 
   </div>
