@@ -37,8 +37,7 @@ const code = {
 
     <div class="mt-12 p-6 bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800 rounded-lg">
       <p class="font-bold mb-2">重要提示：</p>
-      <p>要讓 `@apply` 生效，您需要將其放置在 Tailwind CSS 能夠處理的 CSS 檔案中，例如 `src/style.css` 或 Vue 元件中帶有 `lang="postcss"` 的
-        `&lt;style&gt;` 區塊。</p>
+      <p>要讓 `@apply` 生效，您需要將其放置在 `src/style.css`。</p>
     </div>
   </div>
 </template>
