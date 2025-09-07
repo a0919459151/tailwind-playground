@@ -19,6 +19,7 @@
           :key="child.path"
           :to="child.path"
           class="flex items-center gap-3 px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 transition-colors"
+          active-class="font-bold bg-gray-100"
         >
           {{ child.name }}
         </router-link>
@@ -43,11 +44,13 @@ const itemsWithState = ref(props.items.map(item => ({
   expanded: false,
 })));
 
-const toggleExpand = (item) => {
-  item.expanded = !item.expanded;
+const toggleExpand = (clickedItem) => {
+  const currentState = clickedItem.expanded;
+  // First, collapse all items
+  itemsWithState.value.forEach(item => {
+    item.expanded = false;
+  });
+  // Then, expand the clicked item if it was previously collapsed
+  clickedItem.expanded = !currentState;
 };
 </script>
-
-<style scoped>
-/* Add specific styles for SidebarNav if needed */
-</style>
